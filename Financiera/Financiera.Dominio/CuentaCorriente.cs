@@ -27,6 +27,7 @@ namespace Financiera.Dominio
 
         public void Bloquear()
         {
+            EstadoCuenta = 2;
         }
 
         public void Desbloquear()
