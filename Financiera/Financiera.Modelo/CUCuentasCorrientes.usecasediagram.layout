@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="CUCuentasCorrientes">
+  <useCaseModelRootMoniker Id="ae5172c0-741e-4b59-a75c-2f98cc0ae9ba" />
+  <nestedChildShapes>
+    <useCaseShape Id="44ce4b8d-774f-4811-8518-986350cf2080" absoluteBounds="5, 1.875, 1.625, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="fb13657d-bb54-4ab4-bd00-fa645de5cff1" LastKnownName="Apertura Cuenta" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <actorShape Id="b964bcb7-4441-4594-bc9f-ec7645d1408d" absoluteBounds="3.5, 1.875, 0.5, 0.5" isReference="false" heightOffset="0">
+      <actorMoniker Id="a5ec1bb3-c2f0-4a63-bf34-cc100f16a86d" LastKnownName="Cliente" />
+      <relativeChildShapes />
+    </actorShape>
+    <useCaseAssociationConnector edgePoints="[(4 : 2.125); (5 : 2.125)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="0e9f6540-3d66-43aa-849b-3436914c84d5" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="b964bcb7-4441-4594-bc9f-ec7645d1408d" />
+        <useCaseShapeMoniker Id="44ce4b8d-774f-4811-8518-986350cf2080" />
+      </nodes>
+    </useCaseAssociationConnector>
+  </nestedChildShapes>
+</useCaseDiagram>

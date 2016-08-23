@@ -1,0 +1,326 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner"
+  dslVersion="1.0.0.0"
+  Id="90601fae-89f2-4012-a16d-666a21c678b9"
+  name="Financiera.Modelo" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <useCase
+        Id="a52907cf-6715-450d-8fb0-15d682be6b37"
+        name="Apertura Cuenta"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="b25315f3-27f7-4e22-bfaa-d168f5a0bc7a"
+        name="Cliente"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="961ee854-9998-48f6-9bf6-e99f35807963"
+            isDerived="false"
+            sourceEndRoleName="Cliente"
+            targetEndRoleName="Apertura Cuenta"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="a52907cf-6715-450d-8fb0-15d682be6b37"
+              LastKnownName="Apertura Cuenta"
+              LastKnownLocation="Financiera.Modelo.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6b24ba13-808d-43a8-b7d8-151f1ada7404"
+                  name="Cliente"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2557c32f-4cd4-4665-9e64-184caa46480d"
+                  name="Apertura Cuenta"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <interaction
+        Id="4448f30b-3746-4762-bbbf-faef2d1c1f44"
+        name="CUAperturaCuentasCorrientes"
+        collapseFragmentsFlag="false"
+        isActiveClass="false"
+        isAbstract="false"
+        isLeaf="false"
+        isReentrant="false">
+        <fragments>
+          <behaviorExecutionSpecification
+            Id="10bf0b23-cc40-4b30-ab97-b61a20b7e527"
+            name="BehaviorExecutionSpecification1">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="fb1bda51-284a-4169-8398-a7d9708c9e8f"
+                LastKnownName="Sistema"
+                LastKnownLocation="Financiera.Modelo.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="0ee09cbc-40aa-40a7-9cc3-885de0dafec5"
+                LastKnownName="ExecutionOccurrenceSpecification2"
+                LastKnownLocation="Financiera.Modelo.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="9726e50b-f1d1-4f1b-87df-582cc665c758"
+                LastKnownName="ExecutionOccurrenceSpecification1"
+                LastKnownLocation="Financiera.Modelo.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="957d7316-0909-4c71-80a4-6b6b7a540d76"
+                LastKnownName="MessageOccurrenceSpecification2"
+                LastKnownLocation="Financiera.Modelo.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="787e87be-683c-449c-9761-b8a85f17cd9e"
+                LastKnownName="MessageOccurrenceSpecification3"
+                LastKnownLocation="Financiera.Modelo.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="9726e50b-f1d1-4f1b-87df-582cc665c758"
+            name="ExecutionOccurrenceSpecification1">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="2838d545-aa79-447c-ad1a-fcc5ae29304e"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Financiera.Modelo.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="fb1bda51-284a-4169-8398-a7d9708c9e8f"
+                LastKnownName="Sistema"
+                LastKnownLocation="Financiera.Modelo.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="404815b7-c5e4-44e1-b023-599ced1e71df"
+            name="MessageOccurrenceSpecification1">
+            <covered>
+              <lifelineMoniker
+                Id="2dae4f9e-3c2f-4c60-8891-a4c25b0c122f"
+                LastKnownName="Cliente"
+                LastKnownLocation="Financiera.Modelo.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="957d7316-0909-4c71-80a4-6b6b7a540d76"
+            name="MessageOccurrenceSpecification2">
+            <covered>
+              <lifelineMoniker
+                Id="fb1bda51-284a-4169-8398-a7d9708c9e8f"
+                LastKnownName="Sistema"
+                LastKnownLocation="Financiera.Modelo.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="787e87be-683c-449c-9761-b8a85f17cd9e"
+            name="MessageOccurrenceSpecification3">
+            <covered>
+              <lifelineMoniker
+                Id="fb1bda51-284a-4169-8398-a7d9708c9e8f"
+                LastKnownName="Sistema"
+                LastKnownLocation="Financiera.Modelo.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="0448026e-5443-4603-bbbf-a8d6ccabb331"
+            name="MessageOccurrenceSpecification4">
+            <covered>
+              <lifelineMoniker
+                Id="2dae4f9e-3c2f-4c60-8891-a4c25b0c122f"
+                LastKnownName="Cliente"
+                LastKnownLocation="Financiera.Modelo.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="0ee09cbc-40aa-40a7-9cc3-885de0dafec5"
+            name="ExecutionOccurrenceSpecification2">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="e563afec-74ac-4e24-b6e1-cdee13237509"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Financiera.Modelo.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="fb1bda51-284a-4169-8398-a7d9708c9e8f"
+                LastKnownName="Sistema"
+                LastKnownLocation="Financiera.Modelo.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+        </fragments>
+        <lifelines>
+          <lifeline
+            Id="2dae4f9e-3c2f-4c60-8891-a4c25b0c122f"
+            name="Cliente"
+            isActor="true"
+            lifelineDisplayName="Cliente">
+            <represents>
+              <propertyMoniker
+                Id="43348b28-65fc-411c-8c85-127924a471df"
+                LastKnownLocation="Financiera.Modelo.uml" />
+            </represents>
+            <topLevelOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="404815b7-c5e4-44e1-b023-599ced1e71df"
+                LastKnownName="MessageOccurrenceSpecification1"
+                LastKnownLocation="Financiera.Modelo.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="0448026e-5443-4603-bbbf-a8d6ccabb331"
+                LastKnownName="MessageOccurrenceSpecification4"
+                LastKnownLocation="Financiera.Modelo.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="fb1bda51-284a-4169-8398-a7d9708c9e8f"
+            name="Sistema"
+            isActor="false"
+            lifelineDisplayName="Sistema">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="9726e50b-f1d1-4f1b-87df-582cc665c758"
+                LastKnownName="ExecutionOccurrenceSpecification1"
+                LastKnownLocation="Financiera.Modelo.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="0ee09cbc-40aa-40a7-9cc3-885de0dafec5"
+                LastKnownName="ExecutionOccurrenceSpecification2"
+                LastKnownLocation="Financiera.Modelo.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+        </lifelines>
+        <messages>
+          <message
+            Id="fbade7d8-09c4-49a9-a53e-708450ccda1b"
+            name="Solicitud de creacion de cuentas"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="404815b7-c5e4-44e1-b023-599ced1e71df"
+                LastKnownName="MessageOccurrenceSpecification1"
+                LastKnownLocation="Financiera.Modelo.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="957d7316-0909-4c71-80a4-6b6b7a540d76"
+                LastKnownName="MessageOccurrenceSpecification2"
+                LastKnownLocation="Financiera.Modelo.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="91938cac-5907-4893-8ade-f9cb850684a5"
+            name="responde si es cliente"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="787e87be-683c-449c-9761-b8a85f17cd9e"
+                LastKnownName="MessageOccurrenceSpecification3"
+                LastKnownLocation="Financiera.Modelo.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="0448026e-5443-4603-bbbf-a8d6ccabb331"
+                LastKnownName="MessageOccurrenceSpecification4"
+                LastKnownLocation="Financiera.Modelo.uml" />
+            </receiveEvent>
+          </message>
+        </messages>
+        <ownedAttributesInternal>
+          <property
+            Id="43348b28-65fc-411c-8c85-127924a471df"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <actorMoniker
+                Id="b25315f3-27f7-4e22-bfaa-d168f5a0bc7a"
+                LastKnownName="Cliente"
+                LastKnownLocation="Financiera.Modelo.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </interaction>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="2838d545-aa79-447c-ad1a-fcc5ae29304e"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="e563afec-74ac-4e24-b6e1-cdee13237509"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>

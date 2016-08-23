@@ -7,10 +7,12 @@ using System.Threading.Tasks;
 namespace Financiera.Dominio
 {
     /// <summary>
-    /// Clase de Cominio que representa las Cuentas Corrientes
+    /// Clase de Dominio que representa las Cuentas Corrientes
     /// </summary>
     public class CuentaCorriente
     {
+        #region Propiedades
+
         /// <summary>
         /// Propiedad Unica de cada Cuenta
         /// </summary>
@@ -21,6 +23,10 @@ namespace Financiera.Dominio
         public DateTime FechaApertura { get; set; }
         public byte EstadoCuenta { get; set; }
         public virtual Cliente Propietario { get; set; }
+
+        #endregion
+
+        #region Metodos
 
         /// <summary>
         /// Metodo que devuelve una cuenta corriente nueva
@@ -53,5 +59,7 @@ namespace Financiera.Dominio
         {
             EstadoCuenta = 3;
         }
+
+        #endregion
     }
 }

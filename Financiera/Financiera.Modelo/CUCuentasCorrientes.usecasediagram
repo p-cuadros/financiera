@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="ae5172c0-741e-4b59-a75c-2f98cc0ae9ba" name="CUCuentasCorrientes" linkedPackageId="5b2628d9-9bb8-48a0-a723-c4b6cfeda176" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="861f118b-acdd-4c4f-888c-c12afd958442">
+      <profileInstance Id="bfbe9dbd-3281-4e23-b72e-7d7dc5e8f794" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="062ec97e-be63-425e-a93e-71f18ef6d56b">
+      <profileInstance Id="2f7ab632-0e91-4f6a-bcde-c68dafb8abda" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <useCase Id="fb13657d-bb54-4ab4-bd00-fa645de5cff1" name="Apertura Cuenta" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a52907cf-6715-450d-8fb0-15d682be6b37" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="a5ec1bb3-c2f0-4a63-bf34-cc100f16a86d" name="Cliente" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b25315f3-27f7-4e22-bfaa-d168f5a0bc7a" />
+        <targetEnds>
+          <association Id="0e9f6540-3d66-43aa-849b-3436914c84d5" isDerived="false" sourceEndRoleName="Cliente" targetEndRoleName="Apertura Cuenta" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="fb13657d-bb54-4ab4-bd00-fa645de5cff1" LastKnownName="Apertura Cuenta" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2361791c-b4e3-4924-8838-43a84100f900" name="Cliente" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="6b24ba13-808d-43a8-b7d8-151f1ada7404" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="dac19e47-50e3-4e70-afe2-fdd650a2aae5" name="Apertura Cuenta" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="2557c32f-4cd4-4665-9e64-184caa46480d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="961ee854-9998-48f6-9bf6-e99f35807963" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="5b2628d9-9bb8-48a0-a723-c4b6cfeda176" name="Financiera.Modelo">
+    <elementDefinition Id="90601fae-89f2-4012-a16d-666a21c678b9" />
+  </package>
+</useCaseModelRoot>
