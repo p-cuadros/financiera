@@ -36,7 +36,7 @@ namespace Financiera.Dominio
         /// <param name="as_nombre"></param>
         /// <param name="aby_tipo"></param>
         /// <returns></returns>
-        public Cliente DarAlta(string as_nombre, byte aby_tipo)
+        public static Cliente DarAlta(string as_nombre, byte aby_tipo)
         {
             return new Cliente() { NombreCliente = as_nombre, TipoCliente = aby_tipo  };
         }
