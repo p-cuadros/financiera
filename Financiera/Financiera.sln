@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Financiera.Infraestructura.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Financiera.Distribucion.API", "Financiera.Distribucion.API\Financiera.Distribucion.API.csproj", "{99203684-3298-4550-8682-3C3A935123AD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Financiera.Pruebas", "Financiera.Pruebas\Financiera.Pruebas.csproj", "{00BDE8E2-643C-4554-9A42-F2242C10D024}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,22 @@ Global
 		{99203684-3298-4550-8682-3C3A935123AD}.Release|x64.Build.0 = Release|Any CPU
 		{99203684-3298-4550-8682-3C3A935123AD}.Release|x86.ActiveCfg = Release|Any CPU
 		{99203684-3298-4550-8682-3C3A935123AD}.Release|x86.Build.0 = Release|Any CPU
+		{00BDE8E2-643C-4554-9A42-F2242C10D024}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00BDE8E2-643C-4554-9A42-F2242C10D024}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00BDE8E2-643C-4554-9A42-F2242C10D024}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{00BDE8E2-643C-4554-9A42-F2242C10D024}.Debug|ARM.Build.0 = Debug|Any CPU
+		{00BDE8E2-643C-4554-9A42-F2242C10D024}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{00BDE8E2-643C-4554-9A42-F2242C10D024}.Debug|x64.Build.0 = Debug|Any CPU
+		{00BDE8E2-643C-4554-9A42-F2242C10D024}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{00BDE8E2-643C-4554-9A42-F2242C10D024}.Debug|x86.Build.0 = Debug|Any CPU
+		{00BDE8E2-643C-4554-9A42-F2242C10D024}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00BDE8E2-643C-4554-9A42-F2242C10D024}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00BDE8E2-643C-4554-9A42-F2242C10D024}.Release|ARM.ActiveCfg = Release|Any CPU
+		{00BDE8E2-643C-4554-9A42-F2242C10D024}.Release|ARM.Build.0 = Release|Any CPU
+		{00BDE8E2-643C-4554-9A42-F2242C10D024}.Release|x64.ActiveCfg = Release|Any CPU
+		{00BDE8E2-643C-4554-9A42-F2242C10D024}.Release|x64.Build.0 = Release|Any CPU
+		{00BDE8E2-643C-4554-9A42-F2242C10D024}.Release|x86.ActiveCfg = Release|Any CPU
+		{00BDE8E2-643C-4554-9A42-F2242C10D024}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
