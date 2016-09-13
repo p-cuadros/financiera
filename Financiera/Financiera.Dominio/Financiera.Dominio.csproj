@@ -45,6 +45,7 @@
     <Compile Include="Cliente.cs" />
     <Compile Include="CuentaCorriente.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="IRepositorioGenerico.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram1.cd" />

@@ -11,6 +11,12 @@ namespace Financiera.Dominio
     /// </summary>
     public class Cliente
     {
+        #region Constructor
+        private Cliente()
+        {
+        }
+        #endregion
+
         #region Propiedades
 
         /// <summary>
