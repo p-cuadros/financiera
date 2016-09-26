@@ -16,7 +16,8 @@ namespace Financiera.Pruebas
             var cliente = Cliente.DarAlta("Hector Maquera", 1);
             //var cliente2 = new Cliente() { NombreCliente = "Hector Maquera", TipoCliente = 1 };
             var repositorio = new RepositorioGenerico<Cliente>();
-            var cliente_existente = repositorio.ObtenerPorExpresion(p => p.NombreCliente.Contains("Hector"), null, 0).FirstOrDefault();
+            var cliente_existente = repositorio
+                .ObtenerPorExpresion(p => p.NombreCliente.Contains("Hector"), null, 0).FirstOrDefault();
             if (cliente_existente == null)
             {
                 repositorio.Adicionar(cliente);
