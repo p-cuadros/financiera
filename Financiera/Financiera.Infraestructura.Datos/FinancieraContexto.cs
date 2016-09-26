@@ -20,6 +20,7 @@ namespace Financiera.Infraestructura.Datos
         #region Propiedades
         public DbSet<Cliente> Clientes { get; set; }
         public DbSet<CuentaCorriente> CuentasCorrientes { get; set; }
+        public DbSet<Tarjeta> Tarjetas { get; set; }
         #endregion
 
         #region Metodos
@@ -28,6 +29,7 @@ namespace Financiera.Infraestructura.Datos
             base.OnModelCreating(modelBuilder);
             modelBuilder.Configurations.Add(new ClienteMapeo());
             modelBuilder.Configurations.Add(new CuentaCorrienteMapeo());
+            modelBuilder.Configurations.Add(new TarjetaMapeo());
         }
         #endregion
     }

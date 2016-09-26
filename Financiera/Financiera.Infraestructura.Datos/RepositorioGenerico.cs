@@ -24,7 +24,7 @@ namespace Financiera.Infraestructura.Datos
         { 
            return Entidad.Find(ao_llaves); 
         } 
-        public IList<T> ObtenerPorExpresion(Expression<Func<T, bool>> ao_llaves, string as_incluir, byte aby_limite)
+        public IList<T> ObtenerPorExpresion(Expression<Func<T, bool>> ao_llaves, string as_incluir = null, byte aby_limite = 0)
         {
             if (ao_llaves == null)
                 return Entidad.ToList();

@@ -17,5 +17,12 @@
       <Property Name="Propietario" />
     </ShowAsAssociation>
   </Class>
+  <Enum Name="Financiera.Dominio.EstadoTarjeta">
+    <Position X="4.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIIAAAAAAAAAAAAAAAAAAAIAAAEA=</HashCode>
+      <FileName>EstadoTarjeta.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>
